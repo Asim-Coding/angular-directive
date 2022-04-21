@@ -1,0 +1,6 @@
+<h1>ng if example</h1>
+<div class="search-div"[ngClass]="{changeBackground: searchValue != ''}">
+       <span><b>Search</b></span>
+        <input type="text" [(ngModel)]="searchValue">
+        <h5 *ngIf="searchValue !== ''">you search for"{{searchValue}}"</h5>
+</div>
